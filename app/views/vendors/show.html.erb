@@ -1,0 +1,6 @@
+<label> Vendor name: </label><br>
+<%=@vendor.name%><br>
+<label> List of sweets sold: </label><br>
+<%@vendor.sweets.each do |sweet|%>
+<%=link_to sweet.name, sweet_path(sweet) %><br>
+<%end%>
