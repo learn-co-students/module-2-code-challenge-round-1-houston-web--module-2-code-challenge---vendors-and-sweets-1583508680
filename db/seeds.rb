@@ -19,3 +19,7 @@ end
 sweets.each do |sweet|
   Sweet.create(name: sweet)
 end
+
+# VendorSweet.create(vendor_id: Vendor.all.sample.id)r
+# VendorSweet.create(sweet_id: Sweet.all.sample.id)
+
